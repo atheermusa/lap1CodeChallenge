@@ -38,3 +38,7 @@ server.get('/queries', (req, res) => res.send(JSON.stringify(queries)))
 
 //listen//
 server.listen(port, () => console.log(`Search engine on http://localhost:${port}`))
+
+
+
+
