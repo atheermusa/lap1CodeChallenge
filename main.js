@@ -12,7 +12,19 @@ function returnText(e) {
     myString += text
 
     console.log(myString)
+    window.location.href = "./searchResults.html"
     return myString
+};
+
+
+
+function getQueries(e) {
+    e.preventDefault();
+    
+    fetch('http://localhost:3000')
+      .then(r=>r.json())
+      .catch(console.warn)
+      .then(data => console.log(data))
 };
 
 
