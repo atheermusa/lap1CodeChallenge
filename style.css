@@ -6,23 +6,26 @@ align-items: center;
 }
 
 #logoContainer {
-  
-}
-
-
-#image-container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vh;
 }
+
+
+
+
 img {
-  height: 300px;
+  padding-top: 120px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #search {
-    width: 100vh;
+
 }
 
 .listItem {
@@ -30,3 +33,45 @@ img {
   background-color: grey;
   margin: 5px;
 }
+
+#searchBar {
+ 
+  width: 70%;
+  font-size: 16px;
+  padding: 5px 100px;
+  border-radius: 20px;
+  border: solid ;
+  border-width: thin;
+  border-color: rgb(207, 202, 202);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#searchButton {
+  margin-left: 50px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: solid ;
+  border-width: thin;
+  border-color: rgb(207, 202, 202);
+  margin-right: 20px;
+
+
+}
+
+#imFeelingLucky {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: solid ;
+  border-width: thin;
+  border-color: rgb(207, 202, 202);
+
+
+}
+
+

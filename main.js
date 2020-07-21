@@ -21,10 +21,9 @@ function returnText(e) {
 function getQueries(e) {
     e.preventDefault();
     
-    fetch('http://localhost:3000')
-      .then(r=>r.json())
-      .catch(console.warn)
-      .then(data => console.log(data))
+      fetch('http://localhost:3000/cats')
+        .then(r => r.json())
+        .then(console.log)
 };
 
 

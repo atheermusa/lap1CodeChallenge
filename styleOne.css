@@ -1,0 +1,63 @@
+body {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  }
+  
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+ img {
+    height: 50px;
+    margin-right: 50px;
+  }
+  
+ 
+  #searchBar {
+    width: 30%;
+    font-size: 16px;
+    padding: 10px 70px;
+    margin-right: 50px;
+    border-radius: 20px;
+    border: solid ;
+    border-width: thin;
+    border-color: rgb(207, 202, 202);
+  
+  }
+  
+  
+  /*works full-screen, but not half-screen*/
+  #searchButton {
+    /* margin-left: 50px; */
+    font-size: small;
+    padding: 10px;
+    border-radius: 20px;
+    border: solid ;
+    border-width: thin;
+    border-color: rgb(207, 202, 202);
+    
+
+
+  }
+  
+  #imFeelingLucky {
+    padding: 10px;
+    border-radius: 20px;
+    border: solid ;
+    border-width: thin;
+    border-color: rgb(207, 202, 202);
+
+  }
+  
+  .listItem {
+    padding: 10px 20px 10px 20px;
+    background-color: grey;
+    margin: 5px 0px;
+    
+  }
+   */
