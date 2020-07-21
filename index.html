@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="main.js"></script>
-    <script src="server.js"></script>
+    <script src="main.js" defer></script>
+    <script src="server.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Google Clone</title>
   </head>
@@ -16,12 +16,15 @@
 
 <div class="search">
   <section>
-    <input type="text" id="searchBar">
-    <br>
-    <input type="submit" id="searchButton" value="Google Search">
-    <input type="submit" id="imFeelingLucky" value="I'm Feeling Lucky">
+    <form id="form" >
+      <input type="text" id="searchBar">
+      <br>
+      <input type="submit" id="searchButton" value="Google Search">
+      <input type="submit" id="imFeelingLucky" value="I'm Feeling Lucky">
+    </form>
   </section>
 </div>
-
+<!-- <script src="main.js" defer></script>
+<script src="server.js" defer></script> -->
   </body>
 </html>
