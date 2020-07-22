@@ -1,6 +1,7 @@
 const form = document.querySelector('#form');
 form.addEventListener('submit', returnText);
 
+let returnArrays = [];
 let myString = "";
 function returnText(e) {
 
@@ -11,22 +12,31 @@ function returnText(e) {
     text = tg.searchBar.value;
     myString += text
 
-    console.log(myString)
-    window.location.href = "./searchResults.html"
-    return myString
+    console.log(myString);
+    window.location.href = "./searchResults.html";
+
+  const options = { 
+    method: 'POST',
+    body: JSON.stringify(myString)
+  };
+
+
+//fetching the postrequest from server; the requestArray//
+fetch('http://localhost:3000/queries', options)
+.then(r => r.json())
+.then(console.log)
+.then(appendQueries()) //append the fetched values in the array/
+.catch(console.warn)
+
+// return myString;
+
+
 };
 
-
-
-function getQueries(e) {
-    e.preventDefault();
-    
-      fetch('http://localhost:3000/cats')
-        .then(r => r.json())
-        .then(console.log)
-};
-
-
+function appendQueries(){
+  const google = document.getElementById('google');
+  google.innerHTML = returnArrays[0]
+}
 
 
 
