@@ -35,7 +35,7 @@ img {
 }
 
 #searchBar {
- 
+
   width: 70%;
   font-size: 16px;
   padding: 5px 100px;
@@ -71,7 +71,8 @@ img {
   border-width: thin;
   border-color: rgb(207, 202, 202);
 
-
 }
 
-
+hr {
+  border-color: rgba(128, 128, 128, 0.3);
+}

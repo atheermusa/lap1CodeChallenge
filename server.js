@@ -46,7 +46,3 @@ server.post('/queries', (req, res) => res.send({searchURLs}))
 
 //listen//
 server.listen(port, () => console.log(`Search engine on http://localhost:${port}`))
-
-
-
-
