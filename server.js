@@ -10,36 +10,12 @@ server.use(bodyParser.text());
 const port = 3000;
 
 
-
-//resources//
-const queries = [{
-    "name": "Google",
-    "url": "Google.co.uk/search?q=",
-    "description": "a"
-}, 
-{
-    name: "Bing",
-    url: "https://www.bing.com/search?q=",
-    description: "a"
-},
-{
-    name:"duckduckgo",
-    url:"https://duckduckgo.com/search?q=",
-    description: "a"
-},
-{
-    name:"dogpile",
-    url:"https://www.dogpile.com/serp?q=",
-    description: "a"
-}
-]
-
 let searchTerm = "banana pudding";
 let urlAppendix = searchTerm.replace(/\s/g,'+');
 let returnArrays = [];
 console.log(searchTerm);
 console.log(urlAppendix);
-const searchURLs = ["Google.co.uk/search?q=",
+const searchURLs = ["http://Google.co.uk/search?q=",
 "https://www.bing.com/search?q=",
 "https://duckduckgo.com/?q=",
 "https://www.dogpile.com/serp?q=",
@@ -57,13 +33,13 @@ searchURLs.forEach(url => returnArrays.push(`${url}${urlAppendix}`));
 
 
 //routes//
-server.get('/queries', (req, res) => res.send(JSON.stringify(queries)))
+server.get('/queries', (req, res) => res.send(JSON.stringify(searchURLs)))
 
 //add in console to view our queries:
 // fetch('http://localhost:3000/queries').then(r => r.json()).then(console.log)
 
 //post request/ post request of returnArray array to main.js//
-server.post('/queries', (req, res) => res.send({returnArrays}))
+server.post('/queries', (req, res) => res.send({searchURLs}))
 
 //test the post request in browser console//
 // fetch('http://localhost:3000/queries', {method: 'POST'}).then(r => r.json()).then(console.log)
